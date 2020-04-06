@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+   font-family: 'Roboto', sans-serif; 
+   margin: 0;
+   background-color: white;
+   max-width: 100%;
+}
+div  {
+    color: black
+}
+
+/*Menu*/
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 126px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+header img {
+    float: left;
+    position: absolute;
+    top: 30px;
+    left: 374px;
+}
+
+header nav{
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 270px;
+}
+ header nav ul
+{
+    list-style: none;
+    width: 100%;
+}
+header nav ul li { 
+    display: inline;
+    padding-left:6;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-right: 45px;
+    
+    transition-duration: 0.5s;
+
+}
+header nav ul li:hover{
+
+    color: red;
+    padding-left: 47px;
+
+}
+
+
+/*Slider*/
+.slider{
+    
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.slider img {
+top: 30px;
+}
+
+
+/*Tekst o fladze*/
+.articlebox{
+display: flex;
+text-align: left;
+height: 600px;
+width: 100%;
+background-color: white;
+justify-content: center;
+}
+.articlebox .article{
+
+    
+    
+    width: 1200x;
+    padding-top: 10px;
+    line-height: 1.8;
+    
+   
+
+}
+.articlebox .article h1 {
+    font-weight: bold;
+    font-size: 70px;
+    padding-bottom: 15px;
+    line-height: 3;
+
+}
+.articlebox .article p {
+    
+   font-size: large;
+   width: 100%;   
+
+}
+    
+
+/*Najnowsze realizacje*/
+.headline1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    height: 173px;
+    width: 100%;
+    }
+    .realisation {
+        overflow: hidden;
+        /* Style pomocnicze */
+        background: peachpuff;
+        text-align: center;
+    }
+    
+    .realisation .grid {
+        /* Style pomocnicze */
+    
+        background-color: burlywood;
+        display: flex;
+    }
+    
+    .realisation .grid img {
+        font-size: 0px;
+        line-height: 0px;
+        transition-duration: 0.5s;
+    }
+
+    .realisation .grid img:hover {
+        width: 200%;
+
+    }
+    
+    .realisation .grid .element {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .realisation .grid .element:nth-child(1) {
+        max-width: 480px;
+    }
+    
+    .realisation .grid .element .row {
+        display: flex;
+        height: 50%;
+        width: 100%;
+    }
+    
+    .realisation .grid .element .row img {
+        height: 100%;
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .realisation .grid .element .row img:hover {
+        height: 100%;
+    }
+
+
+/*Stopka*/
+.footer-container {
+    width: 50%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-logo-small {
+    width: 8%;
+}
+
+.footer-separator {
+    height: 60%;
+    width: 2px;
+    background-color: #f2f2f2;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 65px;
+    color: #465469;
+}
+
+.image-right {
+
+    float:right;
+    max-width: 20%;
+}
+
+
+
+
+/*formularz*/
+
+
+ input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+ input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
