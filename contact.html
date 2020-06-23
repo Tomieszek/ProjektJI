@@ -5,107 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Projekt JI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="assets/styles/contact.css"
-    />
-    <script src="./assets/scripts/main.js"></script>
+    <link rel="stylesheet"ype="text/css" media="screen" href="assets/styles/contact.css"/>
+
+    <script src="./assets/scripts/contact.js"></script>
   </head>
   <body>
-    <header>
-      <a href="index.html">
-        <img class="logo" src="./assets/images/tanks-vector-5.png">
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">
-              Strona główna
-            </a>
-          </li>
-          <li>
-            <a href="nations.html">
-              Narodowości
-            </a>
-          </li>
-          <li>
-            <a href="gallery.html">
-              Galeria
-            </a>
-          </li>
-          <li>
-            <a href="contact.html">
-              Kontakt
-            </a>
-          </li>
-        </ul>
-  
-      </nav>
-    </header>
-
-    <div class="container">
-      <form action="nothing.php">
-        <label for="fname">Imię</label>
-        <input
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Twoje Imię.."
-        />
-
-        <label for="lname">Nazwisko</label>
-        <input
-          type="text"
-          id="lname"
-          name="lastname"
-          placeholder="Twoje Nazwisko.."
-        />
-
-        <label for="reason">Powód kontaktu</label>
-        <select id="reason" name="reason">
-          <option value="error">Błędy na stronie</option>
-          <option value="question">Pytanie</option>
-          <option value="proposition">Propozycja</option>
-        </select>
-
-        <label for="subject">Treść</label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Napisz coś.."
-          style="height: 200px;"
-        ></textarea>
-
-        <input type="submit" value="Wyślij" />
-      </form>
+    <div class="content">
+    <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a class="home" href="index.html">SHIBBYL</a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
     </div>
     
-  <footer class="footer-container">
-
-
-    <div class="footer-separator"></div>
-
-    <div class="footer-links">
-      <a>
-        <p class="text-small">Kontakt</p>
+    <div class="nav-links">
+      <a href="index.html">
+        Strona główna
       </a>
-
-      <a>
-        <p class="text-small">Polityka Cookies </p>
+      <a href="nations.html">
+        Narodowości
       </a>
-
-
+      <a href="gallery.html">
+        Galeria
+      </a>
+      <a href="contact.html">
+        Kontakt
+      </a>
     </div>
+  </div>
+
+  <div class="container">
+    <form class="contact" id="contact" name="contact" onsubmit="return validateFormOnSubmit(this)" action="" method="post">
+    	<h2 class="heading">Skontaktuj się ze mną</h2>
+
+    <div id="main-error"></div>
+    <div>
+        <label class="separator">Imię</label>
+        <input placeholder="First Name" type="text" name="name" id="name" tabindex="1" autofocus />
+        <div id="name-error"></div>
     </div>
-
-    <a href="https://www.vexels.com/vectors/preview/150061/tank-armoured-vehicle-silhouette"> Tank armoured vehicle
-      silhouette
-    </a> | designed by Vexels
-
-
-  </footer>
+    <div>
+      <label class="separator">Nazwisko</label>
+      <input placeholder="Last Name" type="text" name="surname" id="surname" tabindex="2" autofocus />
+      <div id="surname-error"></div>
+  </div>
+    <div>
+        <label class="separator">Email</label>
+        <input placeholder="Email" type="email" name="email" id="email" tabindex="3" autofocus />
+        <div id="email-error"></div>
+    </div>
+    <div>
+        <label class="separator">Telefon kontaktowy</label>
+        <input placeholder="Numer" type="text" name="phone" id="phone" tabindex="4" autofocus />
+        <div id="test"></div>
+    </div>
+    <div>
+      <label class="separator">Wybierz powód kontaktu</label>
+      <select name="contactReason" id="contactReason" tabindex="5">
+        <option value="blank"selected></option>
+        <option value="problems">Problemy techniczne</option>
+        <option value="articles">Propozycje artykułów</option>
+        <option value="other">Inne</option>
+      </select>
+      <div id="reason-error"></div>
+    </div>
+    <div>
+      <label class="separator">Opisz powód</label>
+      <textarea rows="8" placeholder="" type="text" name="description" id="description" tabindex="6" autofocus></textarea>
+      <div id="description-error"></div>
+  </div>
+    <div>
+        <button type="submit" name="submit" id="submit" tabindex="7">Send</button>
+    </div>
+</form>
+</div>
+    
+    <footer class="nav nav-foot">
+    </footer>
 </body>
 
 </html>
