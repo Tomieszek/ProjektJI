@@ -1,17 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 * {
-   font-family: 'Roboto', sans-serif; 
-   margin: 0;
-   max-width: 100%;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
 }
-
-
 body {
-    background-color: goldenrod;
+    background-color: #daa520;
 }
-
-
-/*Menu*/
 .nav {
     height: 65px;
     width: 100%;
@@ -20,113 +16,103 @@ body {
     top: 0;
     width: 100%;
     padding: 10px 10px 0 10px;
-  }
-  
-  .nav > .nav-header {
+}
+.nav > .nav-header {
     display: inline;
-  }
-  
-  .home {
+}
+.home {
     text-decoration: none;
     color: #fff;
-  }
-  
-  .nav > .nav-header > .nav-title {
+}
+.nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
-  }
-  
-  .nav > .nav-btn {
+}
+.nav > .nav-btn {
     display: none;
-  }
-  
-  .nav > .nav-links {
+}
+.nav > .nav-links {
     float: right;
     font-size: 18px;
-  }
-  
-  .nav > .nav-links > a {
+    margin-top: 8px;
+}
+.nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
-    
-  }
-  
-  .nav > .nav-links > a:hover {
+}
+.nav > .nav-links > a:hover {
     background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .nav > #nav-check {
+}
+.nav > #nav-check {
     display: none;
-  }
-
-  @media (max-width:600px) {
-
+}
+@media (max-width: 620px) {
     .nav {
-      height: 65px;
-      width: 100%;
-      position: sticky;
-      top: 0;
-      width: 100%;
-      margin-bottom: -100px;
+        height: 65px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        margin-bottom: -100px;
     }
-
-  
+    .nav-img {
+        width: 5;
+    }
     .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-      margin-top: 6px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        margin-top: 15px;
     }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+    .nav #nav-check:checked ~ .nav-btn > label,
+    .nav > .nav-btn > label:hover {
+        background-color: rgba(0, 0, 0, 0.3);
     }
     .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
     }
     .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 55px;
+        left: 0;
     }
     .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-      height: 65px;
+        display: block;
+        width: 100%;
+        height: 65px;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
+        height: 0;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 500px);
-      overflow-y: auto;
+        height: calc(100vh - 650px);
+        overflow-y: auto;
     }
-
-    
 }
-
-/*Formularz*/
-
-input[type=text], select, textarea, #email {
+#email,
+input[type="text"],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -135,23 +121,16 @@ input[type=text], select, textarea, #email {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  button[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+}
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  
-  .container {
+}
+.container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -162,26 +141,28 @@ input[type=text], select, textarea, #email {
     margin-top: 25px;
     margin-bottom: 213px;
     margin-top: 150px;
-  }
-  * {box-sizing: border-box;}
-
-
-  /*Stopka*/
-
-  .nav-foot {
+}
+.nav-foot {
     height: 100px;
     width: 100%;
     position: relative;
     margin-top: 290px;
-  }
-
-
-.separator {
-  margin-left: 5px;
-  margin-top: 10px;
 }
-
+.separator {
+    margin-left: 5px;
+    margin-top: 10px;
+}
 .heading {
-  margin-bottom: 10px;
-  margin-left: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.nav-title {
+    float: left;
+}
+.nav-img {
+    float: left;
+    width: 55px;
+}
+.move {
+    margin-top: 10px;
 }

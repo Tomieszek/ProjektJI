@@ -1,88 +1,61 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Projekt JI</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-  <link rel="stylesheet" href="./assets/styles/lightbox.min.css">
-  <link rel="stylesheet" href="./assets/styles/gallery.css">
-  <link rel="stylesheet/less" type="text/css" href="assets/styles/main.css" />
- 
-  <script src='./assets/scripts/gallery.js'></script>
-
+	<meta charset='utf-8'>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<title>Projekt JI</title>
+	<meta content='width=device-width, initial-scale=1' name='viewport'>
+	<meta content="autoRotate:disabled" http-equiv="ScreenOrientation">
+	<link href="./assets/styles/lightbox.min.css" rel="stylesheet">
+	<link href="./assets/styles/gallery.css" rel="stylesheet">
+	<link href="assets/styles/main.css" rel="stylesheet/less" type="text/css">
+	<script src='./assets/scripts/gallery.js'>
+	</script>
 </head>
-
 <body>
+	<div class="nav">
+		<input id="nav-check" type="checkbox">
+		<div class="nav-header">
+		<div class="nav-title">
+			<div class="move">
+				<a class="home" href="index.html">Tanki</a>
+			</div>
+		</div><img class="nav-img" src="./assets/images/military.png"></div>
+		<div class="nav-btn">
+			<label for="nav-check"><span></span> <span></span> <span></span></label>
+		</div>
+		<div class="nav-links">
+			<a href="index.html">Strona główna</a> <a href="nations.html">Artykuły</a> <a href="gallery.html">Galeria</a> <a href="contact.html">Kontakt</a>
+		</div>
+	</div>
+	<div class="row">
+		<p class="separator"></p>
+		<p>Czołgi Niemieckie</p>
+		<div class="gallery">
+			<a data-lightbox="Niemieckie pojazdy" href="./assets/images/Tiger_P.jpg" title="„Tiger P” w trakcie oględzin podczas testów wiosną 1942 roku."><img src="./assets/images/Tiger_P.jpg"></a> <a data-lightbox="Niemieckie pojazdy" href="./assets/images/Konigstiger.jpg" title="Tiger II 1945r."><img src="./assets/images/Konigstiger.jpg" ></a></a> <a data-lightbox="Niemieckie pojazdy" href="./assets/images/JgPanther.jpg" title="JgPanther"><img src="./assets/images/JgPanther.jpg" ></a></a> <a data-lightbox="Niemieckie pojazdy" href="./assets/images/Jagdpanzer IV.jpg" title=" Niemiecki niszczyciel czołgów JgPanzer IV"><img src="./assets/images/Jagdpanzer IV.jpg" ></a> <a data-lightbox="Niemieckie pojazdy" href="./assets/images/Ferdinand Porsche.jpg" title="Ferdinand Porschego zbudowany na podstawie czołgu cieżkiego 'Tiger P' "><img src="./assets/images/Ferdinand Porsche.jpg"></a> <a data-lightbox="Niemieckie pojazdy" href="./assets/images/Panzerjäger_1.jpg" title="Panzerjager"><img src="./assets/images/Panzerjäger_1.jpg"></a><a data-lightbox="Niemieckie pojazdy" href="./assets/images/Stug III.jpg" title="Stug III"><img src="./assets/images/Stug III.jpg"></a>
+		</div>
+		<p>Czołgi Radzieckie</p>
+		<div class="gallery">
+			<a data-lightbox="Rosyjskie pojazdy" href="./assets/images/JS2.jpg" title="Radziecki czołg cięzki JS-2 w trakcie bitwy o Berlin, 1945."><img src="./assets/images/JS2.jpg"></a> <a data-lightbox="Rosyjskie pojazdy" href="./assets/images/KW-2.jpg" title="Radziecki czołg cięzki KW-2."><img src="./assets/images/KW-2.jpg"></a> <a data-lightbox="Rosyjskie pojazdy" href="./assets/images/ISU-152.jpg" title="Radziecki niszczyciel czołgów ISU-152"><img src="./assets/images/ISU-152.jpg"></a> <a data-lightbox="Rosyjskie pojazdy" href="./assets/images/SU-152.jpg" title="Radziecki niszczyciel czołgów SU-152"><img src="./assets/images/SU-152.jpg"></a>
+		</div>
+		<p class="separator"></p>
+		<p class="separator"></p>
+		<p> </p>
 
-  <div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <div class="nav-title">
-        <a class="home" href="index.html">SHIBBYL</a>
-      </div>
-    </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    
-    <div class="nav-links">
-      <a href="index.html">
-        Strona główna
-      </a>
-      <a href="nations.html">
-        Narodowości
-      </a>
-      <a href="gallery.html">
-        Galeria
-      </a>
-      <a href="contact.html">
-        Kontakt
-      </a>
-    </div>
-  </div>
-  
-<div class="row">
-  <p class="separator"></p>
-<p>Czołgi Niemieckie</p>
-    <div class="gallery">
-        
-        <a href="./assets/images/Tiger_P.jpg" data-lightbox="Niemieckie pojazdy" title="„Tiger P” w trakcie oględzin podczas testów wiosną 1942 roku."><img src="./assets/images/Tiger_P.jpg"></a>
-        <a href="./assets/images/Konigstiger.jpg" data-lightbox="Niemieckie pojazdy" ><img src="./assets/images/Konigstiger.jpg"></a>
-          
-              </div>
-  <p>Czołgi Radzieckie</p>
-    <div class="gallery">
-      <a href="./assets/images/JS2.jpg" data-lightbox="Rosyjskie pojazdy" title="Radziecki czołg cięzki JS-2 w trakcie bitwy o Berlin, 1945." ><img src="./assets/images/JS2.jpg"></a>
-      <a href="./assets/images/KW-2.jpg" data-lightbox="Rosyjskie pojazdy" title="Radziecki czołg cięzki JS-2 w trakcie bitwy o Berlin, 1945." ><img src="./assets/images/KW-2.jpg"></a>               
-    </div>
-    <p>Czołgi Radzieckie</p>
-    <div class="gallery">
-      <a href="./assets/images/JS2.jpg" data-lightbox="Rosyjskie pojazdy" title="Radziecki czołg cięzki JS-2 w trakcie bitwy o Berlin, 1945." ><img src="./assets/images/JS2.jpg"></a>
-      <a href="./assets/images/KW-2.jpg" data-lightbox="Rosyjskie pojazdy" title="Radziecki czołg cięzki JS-2 w trakcie bitwy o Berlin, 1945." ><img src="./assets/images/KW-2.jpg"></a>               
-    </div>
-    <p>Czołgi Radzieckie</p>
-    <div class="gallery">
-      <a href="./assets/images/JS2.jpg" data-lightbox="Rosyjskie pojazdy" title="Radziecki czołg cięzki JS-2 w trakcie bitwy o Berlin, 1945." ><img src="./assets/images/JS2.jpg"></a>
-      <a href="./assets/images/KW-2.jpg" data-lightbox="Rosyjskie pojazdy" title="Radziecki czołg cięzki JS-2 w trakcie bitwy o Berlin, 1945." ><img src="./assets/images/KW-2.jpg"></a>               
-    </div>
-    <p>Czołgi Radzieckie</p>
-    <div class="gallery">
-      <a href="./assets/images/JS2.jpg" data-lightbox="Rosyjskie pojazdy" title="Radziecki czołg cięzki JS-2 w trakcie bitwy o Berlin, 1945." ><img src="./assets/images/JS2.jpg"></a>
-      <a href="./assets/images/KW-2.jpg" data-lightbox="Rosyjskie pojazdy" title="Radziecki czołg cięzki JS-2 w trakcie bitwy o Berlin, 1945." ><img src="./assets/images/KW-2.jpg"></a>               
-    </div>
-    <p class="separator"></p>
-  </div>
+		<p class="separator"></p>
+		<p class="separator"></p>
 
-  <footer class="nav nav-foot">
-  </footer>
+		<p> </p>
+		<p class="separator"></p>
+		<p class="separator"></p>
 
-    <script src="./assets/scripts/lightbox-plus-jquery.min.js"></script>
+		<p> </p>
+		<p class="separator"></p>
+		<p class="separator"></p>
+
+	</div>
+	<footer class="nav nav-foot"></footer>
+	<script src="./assets/scripts/lightbox-plus-jquery.min.js">
+	</script>
 </body>
 </html>

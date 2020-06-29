@@ -1,97 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Projekt JI</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet"ype="text/css" media="screen" href="assets/styles/contact.css"/>
-
-    <script src="./assets/scripts/contact.js"></script>
-  </head>
-  <body>
-    <div class="content">
-    <div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <div class="nav-title">
-        <a class="home" href="index.html">SHIBBYL</a>
-      </div>
-    </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    
-    <div class="nav-links">
-      <a href="index.html">
-        Strona główna
-      </a>
-      <a href="nations.html">
-        Narodowości
-      </a>
-      <a href="gallery.html">
-        Galeria
-      </a>
-      <a href="contact.html">
-        Kontakt
-      </a>
-    </div>
-  </div>
-
-  <div class="container">
-    <form class="contact" id="contact" name="contact" onsubmit="return validateFormOnSubmit(this)" action="" method="post">
-    	<h2 class="heading">Skontaktuj się ze mną</h2>
-
-    <div id="main-error"></div>
-    <div>
-        <label class="separator">Imię</label>
-        <input placeholder="First Name" type="text" name="name" id="name" tabindex="1" autofocus />
-        <div id="name-error"></div>
-    </div>
-    <div>
-      <label class="separator">Nazwisko</label>
-      <input placeholder="Last Name" type="text" name="surname" id="surname" tabindex="2" autofocus />
-      <div id="surname-error"></div>
-  </div>
-    <div>
-        <label class="separator">Email</label>
-        <input placeholder="Email" type="email" name="email" id="email" tabindex="3" autofocus />
-        <div id="email-error"></div>
-    </div>
-    <div>
-        <label class="separator">Telefon kontaktowy</label>
-        <input placeholder="Numer" type="text" name="phone" id="phone" tabindex="4" autofocus />
-        <div id="test"></div>
-    </div>
-    <div>
-      <label class="separator">Wybierz powód kontaktu</label>
-      <select name="contactReason" id="contactReason" tabindex="5">
-        <option value="blank"selected></option>
-        <option value="problems">Problemy techniczne</option>
-        <option value="articles">Propozycje artykułów</option>
-        <option value="other">Inne</option>
-      </select>
-      <div id="reason-error"></div>
-    </div>
-    <div>
-      <label class="separator">Opisz powód</label>
-      <textarea rows="8" placeholder="" type="text" name="description" id="description" tabindex="6" autofocus></textarea>
-      <div id="description-error"></div>
-  </div>
-    <div>
-        <button type="submit" name="submit" id="submit" tabindex="7">Send</button>
-    </div>
-</form>
-</div>
-    
-    <footer class="nav nav-foot">
-    </footer>
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>Projekt JI</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="assets/styles/contact.css" media="screen" rel="stylesheet">
+	<script src="./assets/scripts/contact.js">
+	</script>
+</head>
+<body>
+	<div class="content">
+		<div class="nav">
+			<input id="nav-check" type="checkbox">
+			<div class="nav-header">
+			<div class="nav-title">
+				<div class="move">
+					<a class="home" href="index.html">Tanki</a>
+				</div>
+			</div><img class="nav-img" src="./assets/images/military.png"></div>
+			<div class="nav-btn">
+				<label for="nav-check"><span></span> <span></span> <span></span></label>
+			</div>
+			<div class="nav-links">
+				<a href="index.html">Strona główna</a> <a href="nations.html">Artykuły</a> <a href="gallery.html">Galeria</a> <a href="contact.html">Kontakt</a>
+			</div>
+		</div>
+		<div class="container">
+			<form action="" class="contact" id="contact" method="post" name="contact" onsubmit="return validateFormOnSubmit(this)">
+				<h2 class="heading">Skontaktuj się ze mną</h2>
+				<div id="main-error"></div>
+				<div>
+					<label class="separator">Imię</label> <input autofocus="" id="name" name="name" placeholder="First Name" tabindex="1" type="text">
+					<div id="name-error"></div>
+				</div>
+				<div>
+					<label class="separator">Nazwisko</label> <input autofocus="" id="surname" name="surname" placeholder="Last Name" tabindex="2" type="text">
+					<div id="surname-error"></div>
+				</div>
+				<div>
+					<label class="separator">Email</label> <input autofocus="" id="email" name="email" placeholder="Email" tabindex="3" type="email">
+					<div id="email-error"></div>
+				</div>
+				<div>
+					<label class="separator">Telefon kontaktowy</label> <input autofocus="" id="phone" name="phone" placeholder="Numer" tabindex="4" type="text">
+					<div id="test"></div>
+				</div>
+				<div>
+					<label class="separator">Wybierz powód kontaktu</label> <select id="contactReason" name="contactReason" tabindex="5">
+						<option selected value="blank">
+						</option>
+						<option value="problems">
+							Problemy techniczne
+						</option>
+						<option value="articles">
+							Propozycje artykułów
+						</option>
+						<option value="other">
+							Inne
+						</option>
+					</select>
+					<div id="reason-error"></div>
+				</div>
+				<div>
+					<label class="separator">Opisz powód</label> 
+					<textarea autofocus="" id="description" name="description" placeholder="" rows="8" tabindex="6"></textarea>
+					<div id="description-error"></div>
+				</div>
+				<div>
+					<button id="submit" name="submit" tabindex="7" type="submit">Send</button>
+				</div>
+			</form>
+		</div>
+		<footer class="nav nav-foot"></footer>
+	</div>
 </body>
-
-</html>
-  </body>
 </html>

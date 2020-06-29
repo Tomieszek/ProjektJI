@@ -1,89 +1,62 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Projekt JI</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-  <link rel="stylesheet/less" type="text/css" href="assets/styles/main.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js" ></script>
-
-  <script src='./assets/scripts/main.js'></script>
-
+	<meta charset='utf-8'>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+	<title>Projekt JI</title>
+	<meta content='width=device-width, initial-scale=1' name='viewport'>
+	<meta content="autoRotate:disabled" http-equiv="ScreenOrientation">
+	<link href="assets/styles/main.css" rel="stylesheet/less" type="text/css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js">
+	</script>
 </head>
-
 <body>
-
-  <div class="nav">
-  <input type="checkbox" id="nav-check">
-  <div class="nav-header">
-  <div class="nav-title">
-  <a class="home" href="index.html">SHIBBYL</a>
-  </div>
-  </div>
-  <div class="nav-btn">
-  <label for="nav-check">
-  <span></span>
-  <span></span>
-  <span></span>
-  </label>
-  </div>
-  
-  <div class="nav-links">
-  <a href="index.html">
-  Strona główna
-  </a>
-  <a href="nations.html">
-  Narodowości
-  </a>
-  <a href="gallery.html">
-  Galeria
-  </a>
-  <a href="contact.html">
-  Kontakt
-  </a>
-  </div>
-  </div>
-
-  <div class="row">
-  <div class="leftcolumn">
-  <div class="card divwhite">
-  <h2>KW-2</h2>
-  <h4>Radziecki potwór, <time>2020.05.08</time></h4>
-  <div class="article divwhite">
-  <img src="./assets/images/KW-2.jpg" alt="Czołg KW-2 niszczył małe Stugi!">
-  <p class="motto">Czołg nazwany na cześć <a class="tank-description" href="https://pl.wikipedia.org/wiki/Klimient_Woroszy%C5%82ow">Kilmient'a
-  Woroszyłowa</a></p>
-  </div>
-  </div>
-  <div class="card divwhite">
-  <h2>Tiger VI</h2>
-  <h4>Niemiecka technologia, <time>2017.02.08</time></h4>
-  <div class="article">
-  <img src="./assets/images/Tiger_P.jpg" alt="Niemiecka Hybryda (Tiger_P)">
-  </div>
-  <p class="motto">Fajny ten czołg, taki nie za słaby</p>
-  </div>
-  </div>
-  <div class="rightcolumn">
-  <div class="card divwhite">
-  <h2>About Me</h2>
-  
-  <p>Some text about me in culpa qui officia deserunt mollit anim.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, aut quisquam nisi aperiam et ipsam suscipit, reiciendis odio nostrum atque beatae voluptate. Consequuntur unde recusandae, possimus totam temporibus nostrum corrupti?</p>
-  </div>
-  <div class="card divwhite">
-  <h3>Popular Post</h3>
-  <h5>Test</h5>
-  <div class="fakeimg">Image</div><br>
-  </div>
-  </div>
-  </div>
-  </div>
-  
-  <footer class="nav nav-foot">
-  </footer>
-  
+	<div class="nav">
+		<input id="nav-check" type="checkbox">
+		<div class="nav-header">
+		<div class="nav-title">
+			<div class="move">
+				<a class="home" href="index.html">Tanki</a>
+			</div>
+		</div><img class="nav-img" src="./assets/images/military.png"></div>
+		<div class="nav-btn">
+			<label for="nav-check"><span></span> <span></span> <span></span></label>
+		</div>
+		<div class="nav-links">
+			<a href="index.html">Strona główna</a> <a href="nations.html">Artykuły</a> <a href="gallery.html">Galeria</a> <a href="contact.html">Kontakt</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card divwhite">
+				<h2>KW-2</h2>
+				<h4>Radziecki potwór, <time>2020.05.08</time></h4>
+				<div class="article divwhite"><a href="nations.html"><img alt="Czołg KW-2 niszczył małe Stugi!" src="./assets/images/KW-2.jpg"></a>
+					
+					<p class="motto">Czołg nazwany na cześć <a class="tank-description" href="https://pl.wikipedia.org/wiki/Klimient_Woroszy%C5%82ow">Kilmient'a Woroszyłowa</a></p>
+				</div>
+			</div>
+			<div class="card divwhite">
+				<h2>Tiger VI</h2>
+				<h4>Niemiecka technologia, <time>2017.02.08</time></h4>
+				<div class="article"><img alt="Niemiecka Hybryda (Tiger_P)" src="./assets/images/Tiger_P.jpg"></div>
+				<p class="motto">Fajny ten czołg, taki nie za słaby</p>
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card divwhite">
+				<h2>About Me</h2>
+				<p>Some text about me in culpa qui officia deserunt mollit anim.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, aut quisquam nisi aperiam et ipsam suscipit, reiciendis odio nostrum atque beatae voluptate. Consequuntur unde recusandae, possimus totam temporibus nostrum corrupti?</p>
+			</div>
+			<div class="card divwhite">
+				<h3>Popular Post</h3>
+				<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione suscipit ipsum soluta incidunt est porro, delectus libero velit nam neque aliquid voluptate debitis ad. Sapiente ad tempora inventore magni quam!</h5>
+				<div class="fakeimg">
+					Image
+				</div><br>
+			</div>
+		</div>
+	</div>
+	<footer class="nav nav-foot"></footer>
 </body>
 </html>
